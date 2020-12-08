@@ -6,12 +6,12 @@ import java.io.FileOutputStream;
 
 public class Fangfa {
 	public static void main(String[] args) throws Exception {
-		Student stu=new Student("1","ÁõÔó","ÄĞ","³¤ºŞ¸è");
+		Student stu=new Student("114514","é™†æ˜Šå¤©","ç”·","é•¿æ¨æ­Œ");
 		System.out.println(stu.toString());
 		write();
 	}
 		public static void write() throws Exception {
-			File file = new File("C:\\Users\\Admin\\Desktop\\ÎÄ±¾ÎÄ¼şB.txt");
+			File file = new File("C:\\Users\\Admin\\Desktop\\æ–‡æœ¬æ–‡ä»¶B.txt");
 			FileInputStream fis = new FileInputStream(file);
 			byte[] buf = new byte[1024];
 			int len = -1;
@@ -21,12 +21,12 @@ public class Fangfa {
 			}
 			fis.close();
 			StringBuilder file1 = new StringBuilder(sbuf.toString());
-			File file0 = new File("C:\\Users\\Admin\\Desktop\\ÎÄ±¾ÎÄ¼şA.txt");
+			File file0 = new File("C:\\Users\\Admin\\Desktop\\æ–‡æœ¬æ–‡ä»¶A.txt");
 			FileOutputStream fos = new FileOutputStream(file0);
 			 int last = file1.length();
 		        for(int i = 7; i <last+60 ; i+=18) {
-		            file1.insert(i,'£¬');
-		            file1.insert(i+8,'¡£');
+		            file1.insert(i,'ï¼Œ');
+		            file1.insert(i+8,'ã€‚');
 		            file1.insert(i+9,'\r');
 		            file1.insert(i+10,'\n');
 		        }
